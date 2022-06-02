@@ -1,0 +1,4 @@
+//reference
+https://blog.laraveller.com/laravel-filament-admin-panel/
+//docs
+https://filamentphp.com/docs/2.x/admin/installation
