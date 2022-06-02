@@ -8,4 +8,12 @@ use Filament\Resources\Pages\ListRecords;
 class ListPosts extends ListRecords
 {
     protected static string $resource = PostResource::class;
+
+ 
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            PostResource\Widgets\PostOverview::class,
+        ];
+    }
 }

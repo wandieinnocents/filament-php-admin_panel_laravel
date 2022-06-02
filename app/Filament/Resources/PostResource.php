@@ -56,4 +56,12 @@ class PostResource extends Resource
             'edit' => Pages\EditPost::route('/{record}/edit'),
         ];
     }
+
+    // show widget
+    public static function getWidgets(): array
+{
+    return [
+        Widgets\CustomerOverview::class,
+    ];
+}
 }
