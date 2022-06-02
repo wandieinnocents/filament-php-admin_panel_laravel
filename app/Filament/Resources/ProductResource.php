@@ -26,7 +26,7 @@ class ProductResource extends Resource
                     Forms\Components\TextInput::make('name')->required(),
                     Forms\Components\TextInput::make('category')->required(),
                     Forms\Components\TextInput::make('price')->required(),
-                    Forms\Components\RichEditor::make('body')->required(),
+                    Forms\Components\RichEditor::make('description')->required(),
                 ])
             );
     }
