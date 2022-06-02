@@ -23,10 +23,9 @@ class CustomerResource extends Resource
         return $form
             ->schema(
                 Card::make()->columns(1)->schema([
-                    Forms\Components\TextInput::make('name')->required(),
-                    Forms\Components\TextInput::make('category')->required(),
-                    Forms\Components\TextInput::make('price')->required(),
-                    Forms\Components\RichEditor::make('description')->required(),
+                    Forms\Components\TextInput::make('fullname')->required(),
+                    Forms\Components\TextInput::make('phone')->required(),
+                    Forms\Components\RichEditor::make('address')->required(),
                 ])
             );
     }
@@ -35,10 +34,9 @@ class CustomerResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('category'),
-                Tables\Columns\TextColumn::make('price'),
-                Tables\Columns\TextColumn::make('description')->html(),
+                Tables\Columns\TextColumn::make('fullname'),
+                Tables\Columns\TextColumn::make('phone'),
+                Tables\Columns\TextColumn::make('address')->html(),
             ])
             ->filters([
                 //
