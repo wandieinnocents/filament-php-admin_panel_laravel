@@ -9,7 +9,8 @@ class PostOverview extends Widget
 {
     protected static string $view = 'filament.resources.post-resource.widgets.post-overview';
     public ?Model $record = null;
-    public  $fetchStat = "wandie";
+    public  $fetchStat = "STATISTIC 1";
+    public $fetchStat2 = " STATISTIC 2";
 
     
 }

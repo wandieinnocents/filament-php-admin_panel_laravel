@@ -8,7 +8,7 @@
 <x-filament::widget>
     <x-filament::card>
         {{-- Widget content --}}
-        {{ $fetchStat }}
+        {{ $fetchStat2 }}
     </x-filament::card>
 </x-filament::widget>
 
